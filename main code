@@ -1,0 +1,53 @@
+import java.util.*;
+public class Classwork {
+
+	public static void main(String[] args) {
+		//do loop
+		// do{} while(condition);
+		// doesn't check condition first, it does the process first and check condition after.
+		int choice=0,dentday=0;
+		Scanner k=new Scanner(System.in);
+		String dentmon="";
+		final int exit=99;
+		MyDate dentist=new MyDate();
+		dentist.setDay(39);
+		dentist.setMonth("October");
+		dentist.setYear(2016);
+		
+		
+		dentmon=dentist.getMonth();
+		dentday=dentist.getDay();
+		dentist.getYear();
+		System.out.println(dentday+" "+dentmon+","+ dentist.getYear());
+		do
+		{
+			System.out.println("(1) Eggs");
+			System.out.println("(2) Coffee");
+			System.out.println("(3) Pancake");
+			System.out.println("(99) EXIT");
+			System.out.println("=========================");
+			System.out.println("Enter your choice 1-3 or 99 to exit");
+			choice=k.nextInt();
+			switch(choice){
+			case 1:
+			System.out.println("Heres your eggs");break;
+			case 2: 
+				System.out.println("heres your coffee");break;
+			case 3:
+			    System.out.println("hers your pancake");break;
+			case 99:
+				System.out.println("thank you for your order");break;
+			default:
+				System.out.println("invalid choice");break;
+				
+
+			}
+		}while(choice!=exit);
+		k.close();
+		/* Classes:
+		 * class:Scanner Object:k Method.nextInt()
+		 * public:everyone protected:only related things Private:only you
+		 * void: doesnt return anything
+		 */
+	}
+}
