@@ -1,0 +1,33 @@
+
+public class MyDate {
+      private int year;
+      private int day;
+      private String month;
+      
+      public void setDay(int d)
+      {
+    	  if(d>=1&&d<=31)
+    		  day=d;
+    	  else
+    		  System.out.println("Invalid day");
+      }
+      public void setYear(int y)
+      {
+    	  year=y;
+      }
+      public void setMonth(String m)
+      {
+    	  month=m;
+      }
+      public int getDay()
+      {
+    	  return day;
+      }
+      public int getYear(){
+    	  return year;
+      }
+      public String getMonth()
+      {
+    	  return month;
+      }
+}
